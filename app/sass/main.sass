@@ -1,23 +1,197 @@
-@import "bourbon"
+//@import "bourbon"
 @import "fonts"
 @import "libs"
 @import "vars"
 @import "base"
 
-// -------------------- Block_name --------------------
+//font-family: 'Lato', sans-serif
+
+// -------------------- toolbar --------------------
+.toolbar
+  position: fixed
+  left: 50%
+  top: 0
+  transform: translate(-50%, 0)
+  width: 100%
+  max-width: 1180px
+  padding: 20px 0
+
+  &_nav
+    display: flex
+    justify-content: space-around
+    &_list
+      &_link
+        font-family: 'Lato', sans-serif
+        font-size: 18px
+        line-height: 22px
+        text-transform: capitalize
+        &:hover
+          color: #c7b299
 
 
-// -------------------- Block_name --------------------
+// -------------------- header_title --------------------
+.header_title
+  background: url("/img/darkBC.jpg") no-repeat center
+  background-size: cover
+  width: 100%
+  height: 600px
+  display: flex
+  align-items: center
+  margin-bottom: 75px
+  .header_title_container
+    //border: 5px solid #ffffff
+    //padding: 25px
+    //width: 100%
+    margin: 0 auto
+    max-width: 450px
+    &_name
+      text-align: center
+      font-size: 50px
+      color: white
+      text-transform: uppercase
+      border: 5px solid #ffffff
+      border-radius: 5px
+      padding: 25px
+      font-family: 'Lato', sans-serif
 
 
-// -------------------- Block_name --------------------
+// -------------------- about_me --------------------
+.about_me
+  padding-bottom: 75px
+.about_me_container
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  align-items: center
+  &_face
+    width: 230px
+    height: 230px
+    border-radius: 50%
+    overflow: hidden
+    margin: 0 10px
+    box-shadow: 0 10px 20px 1px #493125
+
+    &_images
+      width: 230px
+  &_desc
+    width: 400px
+    &_text
+      font-family: 'Lato', sans-serif
+      font-size: 22px
+      line-height: 28px
+      color: black
 
 
-// -------------------- Block_name --------------------
+// -------------------- skills --------------------
+.skills
+  padding-bottom: 75px
+
+  .skill_container
+    max-width: 700px
+    margin: 0 auto
+    color: black
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &_item
+      width: 100%
+      max-width: 350px
+    .skill-icons
+      font-size: 0
+      margin-bottom: 30px
+      span
+        display: inline-block
+        width: 14px
+        height: 14px
+        background-color: #493125
+        opacity: .8
+        margin-right: 5px
+        border-radius: 50%
+        &:after
+          position: absolute
+          content: ""
+          display: block
+          width: 10px
+          height: 10px
+          background-color: white
+          border-radius: 50%
+          margin: 2px
+
+      @for $i from 1 through 10
+        &.skill-#{$i} span:nth-child(n+#{$i})
+          background: #666666
+          opacity: .5
 
 
-// -------------------- Block_name --------------------
 
+// -------------------- projects --------------------
+.projects
+  padding-bottom: 75px
+.project_container
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  &_item
+    width: 300px
+    transition: all .35s
+    border: 3px solid #493125
+    border-radius: 5px
+    box-shadow: 0 10px 20px 1px #493125
+
+    &:hover
+      transform: rotate(-10deg) scale(1.1)
+    &_link
+      .project_images
+        width: 300px
+
+// -------------------- contacts --------------------
+.contacts
+  padding-bottom: 75px
+.contacts_container
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  .form
+    width: 100%
+    max-width: 300px
+    display: flex
+    flex-direction: column
+    border: 2px solid #493125
+    border-radius: 5px
+    padding: 20px
+    box-shadow: 0 10px 20px 1px #493125
+    &_label
+      font-size: 18px
+      text-transform: capitalize
+      color: #493125
+      font-family: 'Lato', sans-serif
+    &_input
+      width: 100%
+      max-width: 290px
+      outline: none
+      margin-bottom: 10px
+    .form_textarea
+      resize: none
+      margin-bottom: 10px
+    .form_submit
+      width: 100px
+      padding: 10px
+      margin: 0 auto
+      font-family: 'Lato', sans-serif
+      font-size: 16px
+      color: #493125
+      cursor: pointer
+      outline: none
+      background-color: #c7b299
+      transition: all .35s
+      border-radius: 5px
+      border: transparent
+      &:hover
+        background-color: #493125
+        color: white
+
+  .contacts_information
+    flex-direction: column
 
 // -------------------- Block_name --------------------
 
