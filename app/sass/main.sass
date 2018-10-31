@@ -170,9 +170,14 @@
       max-width: 290px
       outline: none
       margin-bottom: 10px
+      text-indent: 10px
+      padding: 5px
     .form_textarea
       resize: none
       margin-bottom: 10px
+      outline: none
+      text-indent: 10px
+      padding: 5px
     .form_submit
       width: 100px
       padding: 10px
@@ -192,6 +197,80 @@
 
   .contacts_information
     flex-direction: column
+    width: 100%
+    max-width: 300px
+    padding: 20px
+    //text-align: center
+
+    &_phone, &_email
+      font-size: 20px
+      font-family: 'Lato', sans-serif
+      line-height: 24px
+      padding-bottom: 20px
+      display: flex
+      align-items: center
+      //justify-content: center
+    &_social
+      display: flex
+      justify-content: space-between
+      //transition: all .35s
+      width: 100%
+      &_fb, &_lk, &_ins, &_google
+        width: 46px
+        height: 46px
+        transition: all .35s
+        border-radius: 50%
+        //margin: 0 auto
+      &_fb:hover
+        fill: white
+        background-color: #4267b2
+        padding: 3px
+        width: 40px
+        height: 40px
+      &_lk:hover
+        fill: white
+        background-color: #283e4a
+        padding: 3px
+        width: 40px
+        height: 40px
+      &_ins:hover
+        fill: white
+        width: 40px
+        height: 40px
+        padding: 3px
+        background: linear-gradient(319deg, rgba(255,216,121,1) 0%, rgba(255,216,121,1) 1%, rgba(129,89,207,1) 100%)
+      &_google:hover
+        fill: white
+        width: 40px
+        height: 40px
+        background-color: #ee5253
+        padding: 3px
+
+      //&_img
+      //  width: 40px
+      //  height: 40px
+      //&:hover:nth-child(1)
+      //  border-radius: 50%
+      //  background-color: #039be5
+      //&:hover:nth-child(2)
+      //  border-radius: 50%
+      //  background-color: #493125
+      //&:hover:nth-child(3)
+      //  border-radius: 50%
+      //  background-color: #c7b299
+      //&:hover:nth-child(4)
+      //  border-radius: 50%
+      //  background-color: #888888
+
+.contacts_information_icon
+  width: 30px
+  height: 30px
+  margin-right: 15px
+
+
+
+
+
 
 // -------------------- Block_name --------------------
 
