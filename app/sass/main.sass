@@ -13,18 +13,23 @@
   top: 0
   transform: translate(-50%, 0)
   width: 100%
-  max-width: 1180px
+  //max-width: 1180px
   padding: 20px 0
-
+  z-index: 99
+  background-color: #039be5
   &_nav
     display: flex
     justify-content: space-around
+    width: 100%
+    max-width: 1180px
     &_list
       &_link
         font-family: 'Lato', sans-serif
         font-size: 18px
         line-height: 22px
         text-transform: capitalize
+        color: white
+        outline: none
         &:hover
           color: #c7b299
 
@@ -58,6 +63,16 @@
 // -------------------- about_me --------------------
 .about_me
   padding-bottom: 75px
+  //margin-bottom: 75px
+  &:after
+    content: " "
+    height: 4px
+    width: 100%
+    background: radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 0.5) 0, rgba(255, 255, 255, 0) 65%)
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 0)
+    margin-top: 42px
 .about_me_container
   display: flex
   justify-content: space-around
@@ -68,7 +83,7 @@
     height: 230px
     border-radius: 50%
     overflow: hidden
-    margin: 0 10px
+    margin: 0 20px
     box-shadow: 0 10px 20px 1px #493125
 
     &_images
@@ -85,6 +100,15 @@
 // -------------------- skills --------------------
 .skills
   padding-bottom: 75px
+  &:after
+    content: " "
+    height: 4px
+    width: 100%
+    background: radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 0.5) 0, rgba(255, 255, 255, 0) 65%)
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 0)
+    margin-top: 42px
 
   .skill_container
     max-width: 700px
@@ -127,6 +151,15 @@
 // -------------------- projects --------------------
 .projects
   padding-bottom: 75px
+  &:after
+    content: " "
+    height: 4px
+    width: 100%
+    background: radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 0.5) 0, rgba(255, 255, 255, 0) 65%)
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 0)
+    margin-top: 42px
 .project_container
   display: flex
   justify-content: space-around
@@ -137,9 +170,9 @@
     border: 3px solid #493125
     border-radius: 5px
     box-shadow: 0 10px 20px 1px #493125
-
+    margin: 0 15px 30px
     &:hover
-      transform: rotate(-10deg) scale(1.1)
+      transform: translateY(-10px) scale(1.1)
     &_link
       .project_images
         width: 300px
@@ -153,21 +186,23 @@
   flex-wrap: wrap
   .form
     width: 100%
+    //width: 270px
     max-width: 300px
     display: flex
     flex-direction: column
     border: 2px solid #493125
     border-radius: 5px
-    padding: 20px
+    padding: 25px
     box-shadow: 0 10px 20px 1px #493125
+    margin: 0 10px 25px
     &_label
       font-size: 18px
       text-transform: capitalize
       color: #493125
       font-family: 'Lato', sans-serif
     &_input
-      width: 100%
-      max-width: 290px
+      //width: 100%
+      //max-width: 260px
       outline: none
       margin-bottom: 10px
       text-indent: 10px
@@ -178,6 +213,7 @@
       outline: none
       text-indent: 10px
       padding: 5px
+      //width: 260px
     .form_submit
       width: 100px
       padding: 10px
@@ -200,8 +236,7 @@
     width: 100%
     max-width: 300px
     padding: 20px
-    //text-align: center
-
+    margin-bottom: 25px
     &_phone, &_email
       font-size: 20px
       font-family: 'Lato', sans-serif
@@ -209,18 +244,15 @@
       padding-bottom: 20px
       display: flex
       align-items: center
-      //justify-content: center
     &_social
       display: flex
       justify-content: space-between
-      //transition: all .35s
       width: 100%
       &_fb, &_lk, &_ins, &_google
         width: 46px
         height: 46px
         transition: all .35s
         border-radius: 50%
-        //margin: 0 auto
       &_fb:hover
         fill: white
         background-color: #4267b2
@@ -246,34 +278,26 @@
         background-color: #ee5253
         padding: 3px
 
-      //&_img
-      //  width: 40px
-      //  height: 40px
-      //&:hover:nth-child(1)
-      //  border-radius: 50%
-      //  background-color: #039be5
-      //&:hover:nth-child(2)
-      //  border-radius: 50%
-      //  background-color: #493125
-      //&:hover:nth-child(3)
-      //  border-radius: 50%
-      //  background-color: #c7b299
-      //&:hover:nth-child(4)
-      //  border-radius: 50%
-      //  background-color: #888888
-
 .contacts_information_icon
   width: 30px
   height: 30px
   margin-right: 15px
 
 
-
-
-
-
-// -------------------- Block_name --------------------
-
+// -------------------- footer --------------------
+.footer_bc
+  background: url("/img/darkBC.jpg") no-repeat center
+  background-size: cover
+  width: 100%
+  height: 200px
+  position: relative
+  //&_information
+  //  position: absolute
+  //  top: 50%
+  //  left: 50%
+  //  transform: translate(-50%, -50%)
+  //  font-size: 40px
+  //  color: white
 
 // -------------------- Block_name --------------------
 

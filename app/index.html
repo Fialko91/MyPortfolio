@@ -12,8 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="shortcut icon" href="img/favicon/logo.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/logo.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
@@ -37,10 +37,10 @@
 		<section class="toolbar">
 			<div class="toolbar_wrapper wrap">
 				<ul class="toolbar_nav">
-					<li class="toolbar_nav_list"><a href="#" class="toolbar_nav_list_link">about me</a></li>
-					<li class="toolbar_nav_list"><a href="#" class="toolbar_nav_list_link">skills</a></li>
-					<li class="toolbar_nav_list"><a href="#" class="toolbar_nav_list_link">project</a></li>
-					<li class="toolbar_nav_list"><a href="#" class="toolbar_nav_list_link">contacts</a></li>
+					<li class="toolbar_nav_list"><a href="#about_me" class="toolbar_nav_list_link">about me</a></li>
+					<li class="toolbar_nav_list"><a href="#skills" class="toolbar_nav_list_link">skills</a></li>
+					<li class="toolbar_nav_list"><a href="#projects" class="toolbar_nav_list_link">project</a></li>
+					<li class="toolbar_nav_list"><a href="#contacts" class="toolbar_nav_list_link">contacts</a></li>
 				</ul>
 			</div>
 		</section>
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </section>
-		<section class="about_me">
+		<section class="about_me" id="about_me">
 			<div class="about_me_wrapper wrap">
                 <h3 class="about_me_name">about me</h3>
 				<div class="about_me_container">
@@ -66,7 +66,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="skills">
+		<section class="skills" id="skills">
 			<div class="skills_wrapper wrap">
                 <h3 class="skills_name">Skills</h3>
 				<div class="skill_container">
@@ -113,7 +113,7 @@
 				</div>
 			</div>
 		</section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="project_wrapper wrap">
                 <h3 class="projects_name">projects</h3>
                 <div class="project_container">
@@ -135,17 +135,19 @@
                 </div>
             </div>
         </section>
-		<section class="contacts">
+		<section class="contacts" id="contacts">
 			<div class="contacts_wrapper wrap">
 				<h3 class="contacts_name">contacts</h3>
 				<div class="contacts_container">
 					<form class="form">
 						<label class="form_label">name</label>
 						<input type="text" class="form_input">
+						<label class="form_label">phone</label>
+						<input type="tel" class="form_input">
 						<label class="form_label">email</label>
 						<input type="email" class="form_input">
 						<label class="form_label">your text</label>
-						<textarea class="form_textarea" cols="30" rows="10"></textarea>
+						<textarea class="form_textarea" rows="8"></textarea>
 						<input type="submit" class="form_submit" >
 					</form>
 					<div class="contacts_information">
@@ -171,6 +173,11 @@
                         </div>
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="footer">
+			<div class="footer_bc">
+				<!--<div class="footer_bc_information">Все права защищены 2018 г</div>-->
 			</div>
 		</section>
 	</div>
